@@ -30,6 +30,13 @@ def main():
         st.error(f"Failed to configure API: {str(e)}")
         return
 
+    hide_st_style = """
+    <style>
+    #MainMenu{visibility : hidden; }
+    footer {visibility : hidden; }
+    header {visibility : hidden; }
+    </style>
+    """
     # Streamlit App
     st.set_page_config(page_title="Resume Analyzer")
     # Sidebar
