@@ -37,6 +37,7 @@ def main():
     header {visibility : hidden; }
     </style>
     """
+    st.markdown( hide_st_style, unsafe_allow_html=True)
     # Streamlit App
     st.set_page_config(page_title="Resume Analyzer")
     # Sidebar
